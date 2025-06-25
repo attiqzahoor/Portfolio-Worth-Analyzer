@@ -1,5 +1,6 @@
 # Portfolio Worth Analyzer
-<img width="943" alt="image" src="https://github.com/user-attachments/assets/157297cf-2b73-4ad9-ae3f-5d99090e58c6" />
+<img width="515" alt="image" src="https://github.com/user-attachments/assets/a837a84a-1a8c-461e-a904-5a9dd460fa33" />
+
 
 
 <img width="473" alt="image" src="https://github.com/user-attachments/assets/8545ab9c-3a9a-4b92-8e4b-12b84cca5f15" />

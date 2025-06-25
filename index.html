@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Worth Analyzer | Muhammad Attiq</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container animate__animated animate__fadeIn">
+    <div class="header">
+      <h1>Portfolio Worth Analyzer</h1>
+      <p class="subtitle">By Muhammad Attiq - Full Stack Developer</p>
+    </div>
+    
+    <form id="estimate-form">
+      <div class="form-group">
+        <label for="github-username">
+          <i class="fab fa-github"></i> GitHub Username
+          <span class="tooltip">?
+            <span class="tooltiptext">Enter your GitHub username to analyze repositories and followers</span>
+          </span>
+        </label>
+        <input type="text" id="github-username" placeholder="e.g. yourusername" />
+        <div class="error" id="github-error"></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="portfolio-url">
+          <i class="fas fa-globe"></i> Portfolio URL
+          <span class="tooltip">?
+            <span class="tooltiptext">Enter your portfolio URL for technical analysis</span>
+          </span>
+        </label>
+        <input type="url" id="portfolio-url" placeholder="e.g. https://yourportfolio.com" />
+        <div class="error" id="url-error"></div>
+      </div>
+      
+      <button type="submit" id="submit-btn">
+        <span id="button-text"><i class="fas fa-calculator"></i> Analyze Portfolio</span>
+      </button>
+    </form>
+    
+    <div id="result">
+      <div class="feedback-emoji" id="feedback-emoji"></div>
+      
+      <div class="analysis-section">
+        <h2><i class="fas fa-chart-bar"></i> Detailed Analysis</h2>
+        
+        <div class="metric">
+          <span><i class="fas fa-paint-brush"></i> Design Quality</span>
+          <span class="metric-value" id="design-score">0/10</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="design-bar"></div>
+        </div>
+        
+        <div class="metric">
+          <span><i class="fas fa-tachometer-alt"></i> Performance</span>
+          <span class="metric-value" id="speed-score">0/100</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="speed-bar"></div>
+        </div>
+        
+        <div class="metric">
+          <span><i class="fab fa-github"></i> GitHub Impact</span>
+          <span class="metric-value" id="github-impact">0</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="github-bar"></div>
+        </div>
+        
+        <div class="metric">
+          <span><i class="fas fa-mobile-alt"></i> Mobile Friendly</span>
+          <span class="metric-value" id="mobile-score">0/10</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="mobile-bar"></div>
+        </div>
+        
+        <div class="metric">
+          <span><i class="fas fa-code"></i> Code Quality</span>
+          <span class="metric-value" id="code-score">0/10</span>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="code-bar"></div>
+        </div>
+      </div>
+      
+      <div class="worth-section">
+        <div class="worth">
+          Estimated Value: $<span id="worth-value">0</span>
+        </div>
+        <button id="download-btn" class="download-btn">
+          <i class="fas fa-download"></i> Download Report
+        </button>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="social-links">
+        <a href="https://github.com/attiqzahoor" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/muhammadattiqweb3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:attiqmuhammad51@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="copyright">© 2025 Portfolio Worth Analyzer | Developed by Muhammad Attiq</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

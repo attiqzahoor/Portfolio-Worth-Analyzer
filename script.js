@@ -159,7 +159,7 @@ function calculateConsistentWorth(scores, hashValue) {
   
   // Scale to 300-2000 range
   const minScore = 30;
-  const maxScore = 2000;
+  const maxScore = 200;
   const worth = minScore + (weightedScore * (maxScore - minScore) / 10);
   
   // Add small consistent variation based on hash
